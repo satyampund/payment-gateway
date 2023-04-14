@@ -24,7 +24,7 @@ app.post('/order', async (req, res) => {
   const order = await instance.orders.create({
     amount: amount * 100,
     currency: 'INR',
-    receipt: 'SATYAM_' + Math.floor(Math.random() * 10000),
+    receipt: 'SATYAM_' + Math.floor(Math.random() * 100000),
     notes: notes,
   });
 
